@@ -28,6 +28,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    justify-content: right;
 }
 
 .section-title {
@@ -57,6 +58,147 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+
+
+/***** En-tête ******/
+
+img {
+    width: 120px;
+    height:  40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lien_navigation {
+    display: flex;
+    gap: 50px;
+}
+.lien_navigation a :hover {
+    border-top: 1px solid blue;
+    color: blue;
+}
+
+.recherche {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 150%;
+    margin: 0px;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 100%;
+    margin-top: 10px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+}
+
+
+i.fa-solid.fa-location-dot {
+    color: black;
+    background-color: #F2F2F2;
+    padding: 17px 20px 17px 20px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+input#recherche {
+    border: none;
+}
+
+input[type="submit" i] {
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+}
+
+.filtres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 50px;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+
+.bouton_filtre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 50px;
+}
+
+.bouton_filtre:hover {
+    background-color: lightblue;
+}
+
+.bouton_filtre i {
+    display: flex;
+    height: 50px;
+    scale: 120%;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+}
+
+.bouton_filtre p {
+    font-weight: 600;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.information p {
+    font-size: 80%;
+}
+
+.information i  {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    padding: 5px;
+    scale: 80%;
+}
+
+
+
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

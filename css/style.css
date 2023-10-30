@@ -63,7 +63,7 @@ a {
 
 /***** En-tête ******/
 
-img {
+ header img {
     width: 120px;
     height:  40px;
     margin-top: 20px;
@@ -80,7 +80,7 @@ nav {
     display: flex;
     gap: 50px;
 }
-.lien_navigation a :hover {
+.lien_navigation a:hover {
     border-top: 1px solid blue;
     color: blue;
 }
@@ -118,7 +118,8 @@ i.fa-solid.fa-location-dot {
 }
 
 input#recherche {
-    border: none;
+    border: 1px solid #d9d9d9;
+    border-left: 0px;
 }
 
 input[type="submit" i] {
@@ -196,10 +197,6 @@ input[type="submit" i] {
 }
 
 
-
-
-
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -216,6 +213,53 @@ input[type="submit" i] {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    flex-direction: column;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+.hebergement_carte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    height: 45%;
+    width: 100%;
+}
+
+.hebergement_carte img {
+    width: 247px;
+    height: 185px;
+    border-radius: 5px 5px 0px 0px;
+    justify-content: right;
+    
+}
+.hebergement_carte .carte {
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    width: 250px;
+    padding: 3px;
+    padding-right: 1px;
+ }
+
+.carte h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+ }
+
+.carte p {
+ margin-bottom: 5px;
+ margin-top: 0px;
+}
+
+.afficher_plus {
+    font-weight:bold;
+}
+
+.afficher_plus:hover {
+    text-decoration: underline;
 }
 
 /****** Populaires ***********/

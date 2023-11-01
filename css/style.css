@@ -223,6 +223,7 @@ h3 {
 .hebergement_carte {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 15px;
     height: 45%;
@@ -324,6 +325,7 @@ h5 {
 .zone_activites {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -340,8 +342,29 @@ h5 {
 
 .carte_activite p {
     margin-left: 20px;
-    
     font-weight: bold;
+}
+
+/***** Footer *****/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: #d9d9d9;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    justify-content: flex-start
+}
+
+.zone_footer {
+    width: 45%;
+}
+
+h6 {
+    font-size: larger;
+    margin-bottom: 5px;
 }
 
 

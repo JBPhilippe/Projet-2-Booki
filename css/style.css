@@ -80,13 +80,20 @@ nav {
 
 .lien_navigation {
     display: flex;
-    gap: 50px;
+    width: 200px;
+    justify-content: space-between;
 }
-.lien_navigation a:hover {
-    border-top: 1px solid #0065FC;
+
+.lien_navigation1 , .lien_navigation2 {
+    border-top: 1px solid white;
+}
+
+.lien_navigation1:hover , .lien_navigation2:hover {
+    border-color: #0065FC;
     color: #0065FC;
-    
 }
+
+
 
 .recherche {
     display: flex;
@@ -473,22 +480,39 @@ h6 {
     }
 
     .lien_navigation {
-        height: 25px;
+        height: 50px;
         width: 100%;
         justify-content: space-around;
         font-size:125%;
-        padding-bottom: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+
+    .lien_navigation1 , .lien_navigation2 {
+        width:50%;
+        text-align: center;
         border-bottom: 1px solid #F2F2F2;
+    }
+
+    .lien_navigation1:hover , .lien_navigation2:hover {
+        border-top: none; /** Héritage hover du css de base? impossible à changer autrement **/
+        border-bottom: 3px solid #0065FC;
+        /**décalage texte vers le haut, lié au changement d'épaisseur de bordure au hover **/
+    }
+
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
     }
 
     .hebergements-and-populaires section {
         border-radius: 0px;
+        
     }
 
     section.hebergements {
         background-color: white;
         padding: 10px;
+        margin-top: 30px;
     }
 
     .hebergement_carte a {
@@ -502,6 +526,7 @@ h6 {
       
         section.populaires {
             padding:10px;
+            margin-top: 10px;
         }
 
 
@@ -517,6 +542,10 @@ h6 {
         }
 
         .populaires-cards .card {
+            margin-top: 15px;
+        }
+
+        .afficher_plus {
             margin-top: 15px;
         }
 

@@ -86,6 +86,7 @@ nav {
 
 .lien_navigation1 , .lien_navigation2 {
     border-top: 1px solid white;
+    padding-top: 10px;
 }
 
 .lien_navigation1:hover , .lien_navigation2:hover {
@@ -106,7 +107,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 100;
+    font-weight: bold;
     font-size: 100%;
     margin-top: 10px;
 
@@ -128,7 +129,7 @@ i.fa-solid.fa-location-dot {
 }
 
 input#recherche {
-    border: 1px solid #d9d9d9;
+    border: 1px solid #F2F2F2;
     border-left: 0px;
     font-weight: bold;
     padding-left: 10px;
@@ -144,17 +145,24 @@ input[type="submit" i] {
     background-color: #0065FC;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    display:none;
 }
 
 .filtres {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 30px;
     gap: 15px;
 }
 
 .filtres p {
     font-weight: bold;
+    vertical-align: middle;
 }
 
 .barre_filtres {
@@ -170,9 +178,9 @@ input[type="submit" i] {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 10px;
-    width: 130px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     border: 2px solid #d9d9d9;
     border-radius: 50px;
 }
@@ -183,8 +191,7 @@ input[type="submit" i] {
 
 .bouton_filtre i {
     display: flex;
-    height: 50px;
-    justify-content: center;
+    height: auto;
     align-items: center;
     color: #0065FC;
 }
@@ -369,9 +376,9 @@ h5 {
 }
 
 .zone_activites p {
-    font-weight: bold;
+    justify-content: left;
     margin-left: 20px;
-    text-align:start;
+    font-weight: bold;
 }
 
 /***** Footer *****/
@@ -408,15 +415,6 @@ h6 {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
-    .filtres {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    .filtres p {
-        margin-bottom: 0px;
-    }
 
     .zone_activites {
         height: 300px;
@@ -499,6 +497,63 @@ h6 {
         /**décalage texte vers le haut, lié au changement d'épaisseur de bordure au hover **/
     }
 
+    input#recherche {
+        border: 1px solid #d9d9d9;
+        border-left: 0px;
+        font-weight: bold;
+        padding-left: 10px;
+        width: 200px;
+    }
+
+    input[type="submit"] {
+        display: none; /**On cache l'input submit pour afficher la loupe **/
+    }
+
+    button[type="submit"] {
+        display: flex;
+        position: absolute; /*Pour donner l'effet désiré cela semblait le plus simple
+        cela pose peut être problème avec la longueur de la recherche ds la barre? */
+        left: 250px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 15px 15px 15px 15px;
+        height: 50px;
+        width: 50px;
+        background-color: #0065FC;
+        box-shadow: 0px 4px 4px rgb(177, 177, 177)
+    }
+
+   i.fa-solid.fa-magnifying-glass {
+    color: white;
+    scale: 140%;
+   }
+
+    .bouton_filtre {
+        justify-content: flex-start;
+        height: 40px;
+        width: 110px;
+    }
+    
+    
+    .bouton_filtre i {
+        height: auto;
+        justify-content: left;
+        color: #0065FC;
+    }
+    
+    .bouton_filtre p {
+        text-align: center;
+        font-weight: 600;
+        font-size: smaller;
+    }
+
+    .information p {
+        font-size: 85%;
+        font-weight: 500;
+    }
+
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -531,8 +586,8 @@ h6 {
 
 
         .populaires-cards {
-        flex-direction: column;
-        gap:15px;
+            flex-direction: column;
+            gap:15px;
         }
 
         .populaires a {
@@ -556,6 +611,11 @@ h6 {
             width:auto;
             gap: 15px;
         }
+
+        .zone_activites p {
+            vertical-align: middle;
+            margin-top: 12px;
+        }
         
         .carte_activite {
             width: 100%;
@@ -574,4 +634,6 @@ h6 {
         h6 {
             margin-top: 5px;
         }
+
+        
 }

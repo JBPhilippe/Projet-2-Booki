@@ -574,7 +574,7 @@ h6 {
 
    i.fa-solid.fa-magnifying-glass {
     color: white;
-    scale: 140%;
+    transform: scale(1.4);
    }
 
    .barre_filtres {

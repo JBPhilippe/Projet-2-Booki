@@ -634,7 +634,9 @@ h6 {
 
     .hebergement_carte a {
             width: 100%;
-            padding: 0px;
+            padding: 5px;
+            margin: 0px;
+            margin-bottom: 10px;
         }
 
         .hebergement_carte {
@@ -646,10 +648,14 @@ h6 {
             padding: 10px;
         }
 
+        h2.section-title {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
 
         .populaires-cards {
             flex-direction: column;
-            gap:15px;
         }
 
         .populaires a {
@@ -662,8 +668,8 @@ h6 {
             margin-top: 15px;
         }
 
-        .afficher_plus {
-            margin-top: 15px;
+        h5 {
+            padding-left: 10px;
         }
 
     
@@ -671,6 +677,7 @@ h6 {
             flex-direction: column;
             height:auto;
             width:auto;
+            padding: 10px;
             gap: 15px;
         }
 
@@ -694,7 +701,7 @@ h6 {
         }
 
         h6 {
-            margin-top: 5px;
+            margin-top: 15px;
         }
 
         
